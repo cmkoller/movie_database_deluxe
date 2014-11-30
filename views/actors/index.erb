@@ -1,0 +1,7 @@
+<div class="large-6 columns">
+<ul>
+  <% @actors.each do |actor_hash| %>
+    <li><a href="/actors/<%= actor_hash['id'] %>"><%= actor_hash['name'] %></a></li>
+  <% end %>
+</ul>
+</div>
